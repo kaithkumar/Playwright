@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "playwright:cucumber": "node playwright-runner.js",
+    "playwright:cucumber:headed": "node playwright-runner.js --headed"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kaithkumar/Playwright.git"
@@ -19,5 +22,9 @@
   "devDependencies": {
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.2.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "playwright": "^1.58.2"
   }
 }
