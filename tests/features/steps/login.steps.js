@@ -27,7 +27,7 @@ When('I login with username {string} and password {string}', async function (use
 });
 
 Then('I should see the logged in page and save a screenshot', async function () {
-  await page.waitForSelector('text=Logged In Successfully', { timeout: 5000 });
+  await page.waitForSelector('text=Logged In Successfully1', { timeout: 5000 });
   const dir = 'test-results/screenshots';
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   await page.screenshot({ path: `${dir}/landing-page-cucumber.png`, fullPage: true });
