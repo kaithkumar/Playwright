@@ -14,7 +14,7 @@ async function run() {
     const defaultArgs = [
       'node',
       'cucumber-js',
-      'tests/features/login.feature',
+      'tests/features/**/*.feature',
       '--require',
       'tests/features/steps/**/*.js',
       '--format',
